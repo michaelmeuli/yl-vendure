@@ -48,7 +48,7 @@ export const config: VendureConfig = {
         username: <string>process.env.DB_USERNAME,
         password: <string>process.env.DB_PASSWORD,
         migrations: [path.join(__dirname, '../migrations/*.ts')],
-        extra: { max: 2 } // limit connections because of ElephantSQL
+        extra: { max: 2 } //  limit connections because of ElephantSQL
     },
     paymentOptions: {
         paymentMethodHandlers: [dummyPaymentHandler],
