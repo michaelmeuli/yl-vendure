@@ -1,4 +1,4 @@
-{{> header title="Bestellbestätigung" }}
+{{> header title="Rechnung" }}
 
 <mj-raw>
     <style type="text/css">
@@ -60,7 +60,7 @@
         <mj-text css-class="callout-small">{{ formatDate date }}</mj-text>
     </mj-column>
     <mj-column>
-        <mj-text css-class="callout-large"><strong>Total</strong></mj-text>
+        <mj-text css-class="callout-large"><strong>Rechnungstotal</strong></mj-text>
         <mj-text css-class="callout-small">{{ formatMoney order.totalWithTax }} CHF</mj-text>
     </mj-column>
 </mj-section>
@@ -115,7 +115,7 @@
             </tr>
             {{/each}}
             <tr class="order-row total-row">
-                <td colspan="3">Total:</td>
+                <td colspan="3">Rechnungstotal:</td>
                 <td>{{ formatMoney order.totalWithTax }} CHF</td>
             </tr>
         </mj-table>
