@@ -9,6 +9,7 @@ import { AssetServerPlugin, configureS3AssetStorage } from '@vendure/asset-serve
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import path from 'path';
 import { SwissQrInvoicePlugin } from './plugins/swiss-qr-invoice/swiss-qr-invoice-plugin';
+import { emailHandlers } from './email-handlers';
 
 export const config: VendureConfig = {
     apiOptions: {
@@ -70,10 +71,9 @@ export const config: VendureConfig = {
         DefaultJobQueuePlugin.init({ useDatabaseForBuffer: true }),
         DefaultSearchPlugin.init({ bufferUpdates: false, indexStockStatus: true }),
         EmailPlugin.init({
-            devMode: true,
-            outputPath: path.join(__dirname, '../static/email/test-emails'),
-            route: 'mailbox',
-            handlers: defaultEmailHandlers,
+            // outputPath: path.join(__dirname, '../static/email/test-emails'),
+            // route: 'mailbox',
+            handlers: emailHandlers, // defaultEmailHandlers,
             templatePath: path.join(__dirname, '../static/email/templates'),
             globalTemplateVars: {
                 // The following variables will change depending on your storefront implementation
@@ -82,6 +82,16 @@ export const config: VendureConfig = {
                 passwordResetUrl: 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: 'http://localhost:8080/verify-email-address-change'
             },
+            transport: {
+                type: 'smtp',
+                host: 'smtp.sendgrid.net',
+                port: 465,
+                secure: true, // true for 465, false for other ports
+                auth: {
+                    user: <string>process.env.SMTP_USER,
+                    pass: <string>process.env.SMTP_PASSWORD
+                }
+            }
         }),
         AdminUiPlugin.init({
             route: 'admin',
