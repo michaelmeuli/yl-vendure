@@ -17,7 +17,7 @@ const os = require('os');
 const path = require('path');
 const SwissQRBill = require('swissqrbill');
 
-let dir_home = os.homedir();
+// let dir_home = os.homedir();
 const date = new Date();
 
 export const sendInvoiceHandler = new EmailEventListener('send-invoice')
@@ -52,11 +52,13 @@ export const sendInvoiceHandler = new EmailEventListener('send-invoice')
             },
         };
 
-        let path_invoice_dir = path.join(dir_home, 'vendure-invoices');
+        // let path_invoice_dir = path.join(dir_home, 'vendure-invoices');
+        let path_invoice_dir = path.join(__dirname, '../static/assets/vendure-invoices');
         fs.mkdir(path_invoice_dir, { recursive: true }, function (err: any) {
             if (err) console.log(err);
         });
-        let path_invoice_file = path.join(dir_home, 'vendure-invoices', context.event.order.code + '.pdf');
+        // let path_invoice_file = path.join(dir_home, 'vendure-invoices', context.event.order.code + '.pdf');
+        let path_invoice_file = path.join(__dirname, '../static/assets/vendure-invoices', context.event.order.code + '.pdf');
         const pdf = new SwissQRBill.PDF(data, path_invoice_file, { autoGenerate: false, size: 'A4' });
 
         //-- Add creditor address
@@ -240,7 +242,8 @@ export const sendInvoiceHandler = new EmailEventListener('send-invoice')
         return { taxIncluded };
     })
     .setAttachments(async event => {
-        let path_invoice_file = path.join(dir_home, 'vendure-invoices', event.order.code + '.pdf');
+        // let path_invoice_file = path.join(dir_home, 'vendure-invoices', event.order.code + '.pdf');
+        let path_invoice_file = path.join(__dirname, '../static/assets/vendure-invoices', event.order.code + '.pdf');
         return [
             {
                 filename: event.order.code + '.pdf',
