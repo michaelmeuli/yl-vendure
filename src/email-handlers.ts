@@ -246,7 +246,7 @@ export const sendInvoiceHandler = new EmailEventListener('send-invoice')
     })
     .setRecipient(event => event.order.customer!.emailAddress)
     .setOptionalAddressFields(() => ({ bcc: 'michael.meuli@gmail.com, yoga.lichtquelle@gmail.com' }))
-    .setFrom('"Yoga Lichtquelle" <no-reply@yoga-lichtquelle.ch>')
+    .setFrom(`{{ fromAddress }}`)
     .setSubject(`Rechnung für Bestellung #{{ order.code }}`)
     .setTemplateVars(event => ({ order: event.order, date: date, taxIncluded: event.data.taxIncluded }));
 

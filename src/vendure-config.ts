@@ -77,7 +77,7 @@ export const config: VendureConfig = {
             templatePath: path.join(__dirname, '../static/email/templates'),
             globalTemplateVars: {
                 // The following variables will change depending on your storefront implementation
-                fromAddress: '"example" <noreply@example.com>',
+                fromAddress: '"Yoga Lichtquelle" <no-reply@yoga-lichtquelle.ch>',
                 verifyEmailAddressUrl: 'http://localhost:8080/verify',
                 passwordResetUrl: 'http://localhost:8080/password-reset',
                 changeEmailAddressUrl: 'http://localhost:8080/verify-email-address-change'
