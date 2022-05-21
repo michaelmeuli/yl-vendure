@@ -708,6 +708,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.21.tgz#864b987c0c68d07b4345845c3e63b75edd143644"
   integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
 
+"@types/node@>=8.1.0":
+  version "17.0.35"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.35.tgz#635b7586086d51fb40de0a2ec9d1014a5283ba4a"
+  integrity sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==
+
 "@types/node@^10.1.0":
   version "10.17.60"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
@@ -769,31 +774,31 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.3.tgz#781d360c282436494b32fe7d9f7f8e64b3118aa3"
   integrity sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==
 
-"@vendure/admin-ui-plugin@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-1.5.1.tgz#af357ad3bd51fa87d13b87c1073c15ad94724e31"
-  integrity sha512-bB+4fDWP3gcfEd1IfZqqSqD+RSN4PEGoJX5CeSit16oom2XHsc55GfzrQQJO+rSHdGhgQmNYEbnqEX5jk4SL2A==
+"@vendure/admin-ui-plugin@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-1.6.1.tgz#fa144cdff5800b4e661672b020b66e0bb08b3bce"
+  integrity sha512-GcfnioaG2Qnwuie2kZxoQRTOC2tpIxejw+HQutFPem5+O2QDXmwLVOpK78xxaGyvxh8N0xqz2J7+OCKOZ5FNJw==
   dependencies:
     fs-extra "^10.0.0"
 
-"@vendure/asset-server-plugin@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vendure/asset-server-plugin/-/asset-server-plugin-1.5.1.tgz#e51e44de5be09356628d885680865ea34a502b07"
-  integrity sha512-juVgDcjoH+GmZ1PnCxoaCPzpqFRfimDjjYIWdJ2TYp9TTnjsBDWn95+UF5Vnl9GqlRYTOUfOsacmMEidkCfUHQ==
+"@vendure/asset-server-plugin@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/asset-server-plugin/-/asset-server-plugin-1.6.1.tgz#457a70e8a97ec601dc38709b8243e5756c8d2570"
+  integrity sha512-R4tqDOGTnW/YGuyRTuoLX3bGclaLZHo+rjdMPpDkOf4r8wduFLGUCQWCfuSye1JpsY+/tZrccuRJyuIG+spbXQ==
   dependencies:
     file-type "^16.2.0"
     fs-extra "^10.0.0"
     sharp "~0.29.0"
 
-"@vendure/common@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-1.5.1.tgz#f952fd38806c7149539e9b05cd48a2564b1ae34d"
-  integrity sha512-FeTwObRVQHQHWGPUAqlgZUtacNHKJi84k3LCcdieSD1gKV6qvmseX+lQSwlZnlR5CiwIPLzSi3pBVueD1opFXw==
+"@vendure/common@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-1.6.1.tgz#35859a590f234d3c3bf4bdb4a55007f6f5a0392e"
+  integrity sha512-ICdHXYQiIlJZtfILYzmV6i1ckbhRtZr/RBuLtZOGnjzbybL6M3owxm/MT3uWCf5ZvHijEg0zNraLghKc91irrQ==
 
-"@vendure/core@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-1.5.1.tgz#9ba92f0aec9230448f4bc427fe4376de46bf422d"
-  integrity sha512-NzDpDTb5dpOXRFusEvEl/qyrtBc8hr62GjGeBJDsoFqRsWLDVVeAFjbvGCOBRTHwVaLRqr+E+YV84NTNLttQKg==
+"@vendure/core@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-1.6.1.tgz#113533ebbe4dab1cee65f8bad79e4141f9701744"
+  integrity sha512-CwFkWHg8HyFDjYuLWy6+NP679Guqnl+7G4mT61/vfp95aHkl2m7bakZWc6R8Kyt09o5ehXl/ooYT2o5vv/HzBw==
   dependencies:
     "@graphql-tools/stitch" "^7.5.3"
     "@nestjs/common" "7.6.17"
@@ -804,7 +809,7 @@
     "@nestjs/testing" "7.6.17"
     "@nestjs/typeorm" "7.1.5"
     "@types/fs-extra" "^9.0.1"
-    "@vendure/common" "^1.5.1"
+    "@vendure/common" "^1.6.1"
     apollo-server-express "2.24.1"
     bcrypt "^5.0.0"
     body-parser "^1.19.0"
@@ -815,6 +820,7 @@
     express "^4.17.1"
     fs-extra "^10.0.0"
     graphql "15.5.1"
+    graphql-fields "^2.0.3"
     graphql-scalars "^1.10.0"
     graphql-tag "^2.12.4"
     graphql-upload "^12.0.0"
@@ -832,10 +838,10 @@
     rxjs "^6.6.3"
     typeorm "0.2.41"
 
-"@vendure/email-plugin@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vendure/email-plugin/-/email-plugin-1.5.1.tgz#5393a7e2b09349d41fd566dc1eeb2211e586955c"
-  integrity sha512-Mrtl1QV3oohx3YF5SNi6PG05Ub1AgDcvKVygGLxqsEmBMtBpHt04n5VfFsNkLepbAxo6EdP9CQpbRIH8SN7FGQ==
+"@vendure/email-plugin@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/email-plugin/-/email-plugin-1.6.1.tgz#92d861c57d4c3df0f40d4fa201aaf9266f5b5423"
+  integrity sha512-c0yr5ByBx5NVGA77TjeBNz+D3pRM5cFxacp9ivD8Yg0IYvcyRawumdpynjXfTyS3/p08LFTwwA7ExziaK0QwrA==
   dependencies:
     "@types/nodemailer" "^6.4.0"
     dateformat "^3.0.3"
@@ -844,6 +850,11 @@
     handlebars "^4.7.6"
     mjml "^4.7.1"
     nodemailer "^6.4.13"
+
+"@vendure/payments-plugin@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vendure/payments-plugin/-/payments-plugin-1.6.1.tgz#054fa4e896e103c20b1310449d3e87598dd6050a"
+  integrity sha512-f7cQHE0CaJJ/pQ+6tRXExW6TL5vhXcbkupsLMteEKmFZhD7kdorpWH7ZxSuBPanxAEPikkaHtUo6hMZejNirrw==
 
 "@wry/equality@^0.1.2":
   version "0.1.11"
@@ -2728,6 +2739,11 @@ graphql-extensions@^0.15.0:
     apollo-server-env "^3.1.0"
     apollo-server-types "^0.9.0"
 
+graphql-fields@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/graphql-fields/-/graphql-fields-2.0.3.tgz#5e68dff7afbb202be4f4f40623e983b22c96ab8f"
+  integrity sha512-x3VE5lUcR4XCOxPIqaO4CE+bTK8u6gVouOdpQX9+EKHr+scqtK5Pp/l8nIGqIpN1TUlkKE6jDCCycm/WtLRAwA==
+
 graphql-scalars@^1.10.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/graphql-scalars/-/graphql-scalars-1.15.0.tgz#798b9aa12bcbe56be32d62aadc2cd67e22ba63c4"
@@ -4447,6 +4463,13 @@ qs@6.9.7:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.7.tgz#4610846871485e1e048f44ae3b94033f0e675afe"
   integrity sha512-IhMFgUmuNpyRfxA90umL7ByLlgRXu6tIfKPpF5TmcfRLlLCckfP/g3IQmju6jjpu+Hh8rA+2p6A27ZSPOOHdKw==
 
+qs@^6.10.3:
+  version "6.10.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.10.3.tgz#d6cde1b2ffca87b5aa57889816c5f81535e22e8e"
+  integrity sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==
+  dependencies:
+    side-channel "^1.0.4"
+
 querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
@@ -5030,6 +5053,14 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+stripe@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-9.2.0.tgz#06e5b8649cc875334588ab1601bc258db4dba857"
+  integrity sha512-VfL88AOZjZLZyfY6z9k8eACor5z1gRd/YohO0bAMZX9nqMIHXDeolMo6zo6mIZJs7aIrj3ESSDzqHKl0Gkumlg==
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.10.3"
 
 strtok3@^6.2.4:
   version "6.3.0"

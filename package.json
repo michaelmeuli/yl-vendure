@@ -16,8 +16,10 @@
     "@vendure/asset-server-plugin": "1.6.1",
     "@vendure/core": "1.6.1",
     "@vendure/email-plugin": "1.6.1",
+    "@vendure/payments-plugin": "^1.6.1",
     "aws-sdk": "^2.1052.0",
     "pg": "8.7.1",
+    "stripe": "^9.2.0",
     "swissqrbill": "^3.1.4",
     "typescript": "4.3.5"
   },
