@@ -10,6 +10,7 @@ import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import path from 'path';
 import { SwissQrInvoicePlugin } from './plugins/swiss-qr-invoice/swiss-qr-invoice-plugin';
 import { emailHandlers } from './email-handlers';
+import { StripePlugin } from '@vendure/payments-plugin/package/stripe';
 
 export const config: VendureConfig = {
     apiOptions: {
@@ -98,6 +99,12 @@ export const config: VendureConfig = {
             route: 'admin',
             port: 3002,
         }),
-        SwissQrInvoicePlugin
+        SwissQrInvoicePlugin,
+        StripePlugin.init({
+            apiKey: <string>process.env.STRIPE_SECRET_KEY,
+            webhookSigningSecret: <string>process.env.STRIPE_WEBHOOK_SIGNING_SECRET,
+            // This prevents different customers from using the same PaymentIntent
+            storeCustomersInStripe: true,
+          }),
     ],
 };
