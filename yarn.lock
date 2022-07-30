@@ -774,31 +774,31 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.3.tgz#781d360c282436494b32fe7d9f7f8e64b3118aa3"
   integrity sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==
 
-"@vendure/admin-ui-plugin@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-1.6.2.tgz#96c626acbf6d027ce05277347d5a1aa4c81ee496"
-  integrity sha512-XLI7JMJcPc/HwtnntZg19d6bkUtIOvvDiEKgbqeXHex2vvp4evzwyW0NoWuSCK27pSTP7ScLKVP6xk/8yIsTcw==
+"@vendure/admin-ui-plugin@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/admin-ui-plugin/-/admin-ui-plugin-1.6.4.tgz#0a1bfe050f61f7d8fb2d8643cad462b738245a69"
+  integrity sha512-PisLhCrYFzHx8nSNnEZbN7Amo+AB83ZOzVD8c4E0yYCVBIDc67ryvrFbTZNFiWm3FuGAcuPcydrsOr3WgFw4tQ==
   dependencies:
     fs-extra "^10.0.0"
 
-"@vendure/asset-server-plugin@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/asset-server-plugin/-/asset-server-plugin-1.6.2.tgz#4b9c87d303056bf439ca65e9db197e36e6633721"
-  integrity sha512-qaVZPUa4kHDzkkSkdzFjEoHPskea8YsDQzblCafLh1amdm+N3ce2M+ugtgWAK437F5rFbOZw00hWx/VjTKoU9Q==
+"@vendure/asset-server-plugin@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/asset-server-plugin/-/asset-server-plugin-1.6.4.tgz#d4f4ae3514880071f383ece1501ae4953b32f936"
+  integrity sha512-dV8iWTM8UyKHtONaw9+BzBZKetkOm1GIyIk5F5434lfg0e+90Bkc6aqe/q2Qq66r/mAJemaVE4Mo0JHxgZhkiw==
   dependencies:
     file-type "^16.2.0"
     fs-extra "^10.0.0"
     sharp "~0.29.0"
 
-"@vendure/common@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-1.6.2.tgz#a6ec21393651028d4208e0c2e2cd56e105794797"
-  integrity sha512-yE/e5BokcVwStXnAHkLDs22mbkyoVJFRQEM8+hX0j44rHUvfl/wTidwaE3tweUvVN3FUD4Ol8iHKD1mriFZI8g==
+"@vendure/common@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/common/-/common-1.6.4.tgz#6388f87dfd1e94c3ccbf27b1e0c5bfff5f5f8f53"
+  integrity sha512-9PX73ZhFpofN0U01Coet6pG+BjPfcFs/bmX/rk0FicCBYXvGylsZsC2fSk/Tm6OebiC64w+PqDKJgXtO9hS83w==
 
-"@vendure/core@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-1.6.2.tgz#fb7f9b0768817538aeb0f283bc925dcd96562356"
-  integrity sha512-NQi6mD8cX4Dp5XfFPLJw0Wc1Am3aEFOLFJQXY8xq16Auje+QfNVAUzWDWL5gqeM+YUqhDsZ/R5eYl6tkzhB5YA==
+"@vendure/core@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/core/-/core-1.6.4.tgz#47c234e486e15b1bbf7702914811361883bb4080"
+  integrity sha512-UPZY/oaFjzqo9Vq2MC2P/UxmFfKq5NDh5OMZNIcQdjlc+M2jhxQ4YJ3lXje0g4PQapMKE86dCGsrVpVpC1dxng==
   dependencies:
     "@graphql-tools/stitch" "^7.5.3"
     "@nestjs/common" "7.6.17"
@@ -809,7 +809,7 @@
     "@nestjs/testing" "7.6.17"
     "@nestjs/typeorm" "7.1.5"
     "@types/fs-extra" "^9.0.1"
-    "@vendure/common" "^1.6.2"
+    "@vendure/common" "^1.6.4"
     apollo-server-express "2.24.1"
     bcrypt "^5.0.0"
     body-parser "^1.19.0"
@@ -838,10 +838,10 @@
     rxjs "^6.6.3"
     typeorm "0.2.41"
 
-"@vendure/email-plugin@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/email-plugin/-/email-plugin-1.6.2.tgz#747a4f09c4cc8b80a790f71018f2373581135fda"
-  integrity sha512-6IcxRkcD1m1uy9VQiSRQyBaKrhNy48EzlvNNkYXB/RmydW7XCO9vNPQAI8GqOPJx4rgC7UV5StI4F7iMCUsJtw==
+"@vendure/email-plugin@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/email-plugin/-/email-plugin-1.6.4.tgz#d9ecd8b10506a3918f037ca47bdd6e56d9edd641"
+  integrity sha512-u1/7TjUvgyvL3asojVku98oqdsMH0o1f2x0ROxTsK62fQUy63aDl8UawOzB/EO54NJfEV247RRfeuYmHgM0olA==
   dependencies:
     "@types/nodemailer" "^6.4.0"
     dateformat "^3.0.3"
@@ -851,10 +851,10 @@
     mjml "^4.7.1"
     nodemailer "^6.4.13"
 
-"@vendure/payments-plugin@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@vendure/payments-plugin/-/payments-plugin-1.6.2.tgz#d9880473cf9a5312b33a56ba471fd22578b93206"
-  integrity sha512-/NQLmRL/AksemGjJmk67TLmZRc1CFzxSeJgQ9p76eBHmahxxnYMZn7/HEwfslwMPxFRqI8MDuJHQMHSJ5omlIQ==
+"@vendure/payments-plugin@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@vendure/payments-plugin/-/payments-plugin-1.6.4.tgz#57751e10d7c93965a55f01cb556634acc25641d5"
+  integrity sha512-S1MlnLVjrMKy0/fdYHMrbg6bjYKrNX5Bl6QiNuJV7T7WRGS6Men6TpUx+4GsylJGnPDBkBbo5HjJmHfwNfR+Ng==
 
 "@wry/equality@^0.1.2":
   version "0.1.11"
