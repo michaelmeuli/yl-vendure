@@ -16,11 +16,11 @@ export const config: VendureConfig = {
     apiOptions: {
         port: parseInt(<string>process.env.PORT) || 3000,
         adminApiPath: 'admin-api',
-        adminApiPlayground: false,
-        adminApiDebug: false,
+        adminApiPlayground: false, // keep this off for prod
+        adminApiDebug: false, // keep this off for prod
         shopApiPath: 'shop-api',
-        shopApiPlayground: false,
-        shopApiDebug: false
+        shopApiPlayground: false, // keep this off for prod
+        shopApiDebug: false // keep this off for prod
     },
     authOptions: {
         superadminCredentials: {
