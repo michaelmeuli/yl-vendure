@@ -16,11 +16,11 @@ export const config: VendureConfig = {
     apiOptions: {
         port: parseInt(<string>process.env.PORT) || 3000,
         adminApiPath: 'admin-api',
-        adminApiPlayground: false, // keep this off for prod
-        adminApiDebug: false, // keep this off for prod
+        adminApiPlayground: false,
+        adminApiDebug: false,
         shopApiPath: 'shop-api',
-        shopApiPlayground: false, // keep this off for prod
-        shopApiDebug: false // keep this off for prod
+        shopApiPlayground: false,
+        shopApiDebug: false
     },
     authOptions: {
         superadminCredentials: {
@@ -35,7 +35,7 @@ export const config: VendureConfig = {
     },
     dbConnectionOptions: {
         type: 'postgres',
-        synchronize: false,
+        synchronize: true, // turn this off for production
         logging: false,
         database: <string>process.env.DB_DATABASE,
         host: <string>process.env.DB_HOST,
